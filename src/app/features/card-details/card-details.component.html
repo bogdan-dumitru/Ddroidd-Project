@@ -1,0 +1,14 @@
+<div class="card-details-section d-flex">
+  <app-cart></app-cart>
+  <div class="card-details-container">
+    <img src="../../../assets/images/card-details-image.JPG" class="card-details-image"/>
+    <div class="card-details-text">
+      <span class="card-details-title">{{currentCard.title}}</span>
+      <div class="d-flex justify-content-between w-100">
+        <span class="card-details-description">{{currentCard.description}}</span>
+        <button *ngIf="!buttonClicked" class="card-details-button-active" (click)="addToCardClicked()">Add to Cart</button>
+        <button *ngIf="buttonClicked" class="card-details-button-disable">Added</button>
+      </div>
+    </div>
+  </div>
+</div>

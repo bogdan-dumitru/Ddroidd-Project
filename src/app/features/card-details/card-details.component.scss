@@ -1,0 +1,70 @@
+@import '../../../assets/styles/variables';
+
+.card-details-section {
+  padding: 1.5rem;
+}
+
+.card-details-container {
+  margin-left: 3rem;
+  width: 80%;
+  height: 48rem;
+  background-color: $light-blue;
+}
+
+.card-details-image {
+  width: 100%;
+  height: 75%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card-details-text {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: $white;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .card-details-text {
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: $white;
+  }
+}
+
+.card-details-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-details-description {
+  width: 60%;
+  text-align: justify;
+  padding-top: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-details-button-active {
+  width: 15%;
+  color: $white;
+  align-self: end;
+  border: 0;
+  height: 2.5rem;
+  background-color: $accent;
+}
+
+.card-details-button-disable {
+  width: 15%;
+  color: $white;
+  align-self: end;
+  border: 0;
+  height: 2.5rem;
+  background-color: $disable;
+}

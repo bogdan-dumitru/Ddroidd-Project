@@ -1,0 +1,8 @@
+<div class="component-loader">
+  <div class="m-0 text-center w-100">
+    <i [class]="loadingMessage? 'mr-3' : ''" class="fa fa-4x fa-spinner fa-pulse"></i>
+    <span *ngIf="loadingMessage" class="mt-5">
+      {{loadingMessage}}
+    </span>
+  </div>
+</div>

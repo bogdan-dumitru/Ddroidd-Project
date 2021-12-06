@@ -1,0 +1,20 @@
+<header>
+  <div class="flex justify-content-between header align-items-center">
+    <div class="logo" (click)="navigateToHome()">
+      LOGO
+    </div>
+    <div class="">
+      <button class="header-button pe-4" [ngClass]="currentPage === '/home' ? 'button-active' : 'button-inactive'" (click)="navigateToHome()">
+        Home
+      </button>
+      <button class="header-button pe-4" [ngClass]="currentPage === '/about' ? 'button-active' : 'button-inactive'" (click)="navigateToAbout()">
+        About
+      </button>
+      <button class="header-button pe-5 " [ngClass]="currentPage === '/contact' ? 'button-active' : 'button-inactive'" (click)="navigateToContact()">
+        Contact
+      </button>
+      <input id="search-card" [hidden]="isSearchClicked ? false : true" />
+      <i class="fas ps-2 fa-search cursor-pointer pe-2" (click)="searchClicked()"></i>
+    </div>
+  </div>
+</header>

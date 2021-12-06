@@ -1,0 +1,9 @@
+<div class="home d-flex">
+  <app-cart></app-cart>
+  <div class="cards-section ps-5">
+    <div *ngFor="let homeCard of homeCards">
+      <app-card [cardDetails]="homeCard"></app-card>
+    </div>
+  </div>
+</div>
+<app-loader *ngIf="isLoadingComponent$ | async"></app-loader>

@@ -1,0 +1,15 @@
+@import '../../../assets/styles/variables';
+
+.home {
+  padding: 1.5rem;
+}
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 53rem;
+
+}
+

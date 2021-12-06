@@ -1,0 +1,13 @@
+body {
+    font-family: $main-font;
+    font-weight: $main-weight;
+    background-color: $background;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-default {
+  cursor: default !important;
+}

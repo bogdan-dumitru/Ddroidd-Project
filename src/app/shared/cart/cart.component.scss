@@ -1,0 +1,80 @@
+@import 'src/assets/styles/variables';
+
+.left-container {
+  display: table;
+  background-color: $light-blue;
+  width: 18rem;
+  height: 23rem;
+  color: $white;
+}
+
+.left-container-content {
+  padding: 2rem;
+}
+
+.contact-section {
+  font-weight: 600;
+}
+
+.contact-details-section {
+  font-size: 14px;
+  font-family: $main-font;
+  font-weight: $main-weight;
+}
+
+.cart-section {
+  display: table;
+}
+
+
+.cart-title {
+  font-weight: 600;
+}
+
+.cart-empty {
+  vertical-align: middle;
+  line-height: 8rem;
+  height: 10rem;
+  width: 14rem;
+  color: $white;
+  padding: 1rem;
+  text-align: center;
+  background-image: repeating-linear-gradient(to right, $white 0%, $white 50%, transparent 50%, transparent 100%), repeating-linear-gradient(to right, $white 0%, $white 50%, transparent 50%, transparent 100%), repeating-linear-gradient(to bottom, $white 0%, $white 50%, transparent 50%, transparent 100%), repeating-linear-gradient(to bottom, $white 0%, $white 50%, transparent 50%, transparent 100%);
+  background-position: left top, left bottom, left top, right top;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 1.8rem 0.1rem, 1.8rem 0.1rem, 0.1rem 1.8rem, 0.1rem 1.8rem;
+}
+
+.cart-not-empty {
+  height: 10rem;
+  width: 14rem;
+  color: $white;
+  padding: 1rem;
+  background-image: repeating-linear-gradient(to right, $white 0%, $white 50%, transparent 50%, transparent 100%), repeating-linear-gradient(to right, $white 0%, $white 50%, transparent 50%, transparent 100%), repeating-linear-gradient(to bottom, $white 0%, $white 50%, transparent 50%, transparent 100%), repeating-linear-gradient(to bottom, $white 0%, $white 50%, transparent 50%, transparent 100%);
+  background-position: left top, left bottom, left top, right top;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 1.8rem 0.1rem, 1.8rem 0.1rem, 0.1rem 1.8rem, 0.1rem 1.8rem;
+}
+
+.card-section {
+  background-color: $dark-blue;
+  height: 2rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  width: 12rem;
+  display: flex;
+  margin-bottom: 0.2rem;;
+}
+
+.card-price {
+  padding-right: 1rem;
+  color: $accent;
+}
+
+.card-title {
+  padding-right: 1rem;
+  width: 10rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

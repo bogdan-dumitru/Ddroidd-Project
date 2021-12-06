@@ -1,0 +1,14 @@
+@import '../../../assets/styles/variables';
+
+.not-found {
+  text-align: center;
+  padding: 4rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  height: 25rem;
+  font-size: 50px;
+}
+
