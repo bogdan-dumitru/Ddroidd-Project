@@ -33,7 +33,7 @@ export const APP_REDUCER = createReducer<AppState>(
   on(ADD_TO_CART, (state: AppState, action: { card: Card }): AppState => {
     let cartList = [];
     if (state.cart.length > 0) {
-      cartList = [ ...state.cart ];
+      cartList = [...state.cart];
       cartList.push(action.card);
     } else {
       cartList.push(action.card);
@@ -43,12 +43,10 @@ export const APP_REDUCER = createReducer<AppState>(
       cart: cartList
     };
   }),
-  on(SET_LOADING_COMPONENT, (state: AppState, action: { isLoading: boolean }): AppState => {
-    return {
-      ...state,
-      isLoading: action.isLoading
-    };
-  })
+  on(SET_LOADING_COMPONENT, (state: AppState, action: { isLoading: boolean }): AppState => ({
+    ...state,
+    isLoading: action.isLoading
+  }))
 );
 
 

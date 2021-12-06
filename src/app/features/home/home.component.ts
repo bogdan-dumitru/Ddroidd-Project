@@ -23,26 +23,18 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.store.dispatch(SET_LOADING_COMPONENT({isLoading: true}));
-    this.initData();
-    this.getCards();
-  }
-
-  initData(): void {
     this.isLoadingComponent$ = this.store.select(IS_LOADING_COMPONENT);
-    this.store.dispatch(LOAD_CARDS());
+    this.getCards();
   }
 
   getCards(): void {
     this.store.select(GET_CARDS).subscribe((cardList: Array<Card>): void => {
-      if (!cardList) {
+      if (cardList.length === 0) {
+        this.store.dispatch(SET_LOADING_COMPONENT({isLoading: true}));
+        this.store.dispatch(LOAD_CARDS());
         return;
       }
-      //simulate backend call and waiting time
-      setTimeout((): void => {
-        this.homeCards = cardList;
-        this.store.dispatch(SET_LOADING_COMPONENT({isLoading: false}));
-      }, 3000);
+      this.homeCards = cardList;
     });
   }
 }
